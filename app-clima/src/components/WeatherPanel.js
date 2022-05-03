@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Form from './Form';
 import Geolocation from './Geolocation'
 
 
@@ -60,10 +61,18 @@ const WeatherPanel = () => {
 
 
     return(
-        <div>
-            <Geolocation /> 
-        </div>
-    )
+        <React.Fragment>
+    
+        <Form
+            newLocation = {getLocation}
+        />
+        
+        <Geolocation />
+       
+
+
+    </React.Fragment>
+    );
     
 }
 
