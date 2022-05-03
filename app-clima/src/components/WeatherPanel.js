@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import Geolocation from './Geolocation'
 
 
 const WeatherPanel = () => {
@@ -61,7 +61,7 @@ const WeatherPanel = () => {
 
     return(
         <div>
-
+            <Geolocation /> 
         </div>
     )
     
