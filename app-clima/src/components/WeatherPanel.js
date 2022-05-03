@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Form from './Form';
-import Geolocation from './Geolocation'
+import Card from './Card';
+import Geolocation from './Geolocation';
 
 
 const WeatherPanel = () => {
@@ -67,9 +68,15 @@ const WeatherPanel = () => {
             newLocation = {getLocation}
         />
         
+        <Card
+                showData = {show}
+                loadingData = {loading}
+                weather = {weather}
+                forecast = {forecast}
+            />
+
         <Geolocation />
        
-
 
     </React.Fragment>
     );
