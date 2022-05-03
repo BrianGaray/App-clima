@@ -11,10 +11,19 @@ function Geolocation() {
   const [TempForecast3, setTempForecast3] = useState(0);
   const [TempForecast4, setTempForecast4] = useState(0);
   const [TempForecast5, setTempForecast5] = useState(0);
-  
-  
+  const [Icon, setIcon] = useState([]);
+  const [Description, setDescription] = useState("");
 
-  const savePositionToState = (position) => {
+  let today = new Date();
+  let day = today.getDate();
+  let month = today.getMonth() + 1;
+  let year = today.getFullYear();
+  let date = day + '/' + month + '/' + year;
+  
+  
+  
+  
+    const savePositionToState = (position) => {
     setLatitude(position.coords.latitude);
     setLongitude(position.coords.longitude);
   };
@@ -27,6 +36,12 @@ function Geolocation() {
       const res = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=f9cb55b3f2666f289fa6a01d90ade1a3&lang=es&units=metric`
       );
+     
+      
+      let url = "http://openweathermap.org/img/w/";
+      setIcon(url + res.data.weather[0].icon + ".png") ;
+      setDescription(res.data.weather[0].description)
+      
       setTemperature(res.data.main.temp);
       setCityName(res.data.name);
       
@@ -73,11 +88,15 @@ function Geolocation() {
     <div className="TempForecast">  
       <h1>{cityName}</h1>
       <h2>{temperature}ºC</h2>
+      <p className="card-date">{date}</p>
+      <p className="card-icon"><img src={Icon} alt="icon"/>{Description}</p>
+    
       <h2>1 dia{TempForecast}°C</h2>
       <h2>2 dia{TempForecast2}°C</h2>
       <h2>3 dia{TempForecast3}°C</h2>
       <h2>4 dia{TempForecast4}°C</h2>
       <h2>5 dia{TempForecast5}°C</h2>
+      
     </div>
   );
 }
