@@ -12,7 +12,8 @@ const Form = ({newLocation}) => {
 
     return(
     
-    <div className='container'>
+     <div Form-container>
+    <div className='Selects'>
         <select onClick={onSubmit} value = {city} onChange={(e) =>setcity(e.target.value)}>
             
             <option></option>
@@ -24,8 +25,8 @@ const Form = ({newLocation}) => {
 
         </select>
        
-    
-    </div>
+        </div>
+        </div>  
     );
 }
 

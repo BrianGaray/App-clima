@@ -42,7 +42,7 @@ function Geolocation() {
       setIcon(url + res.data.weather[0].icon + ".png") ;
       setDescription(res.data.weather[0].description)
       
-      setTemperature(res.data.main.temp);
+      setTemperature(res.data.main.temp.toFixed(0));
       setCityName(res.data.name);
       
       console.log(res.data);
@@ -85,18 +85,35 @@ function Geolocation() {
   });
 
   return (
-    <div className="TempForecast">  
-      <h1>{cityName}</h1>
-      <h2>{temperature}ºC</h2>
-      <p className="card-date">{date}</p>
-      <p className="card-icon"><img src={Icon} alt="icon"/>{Description}</p>
-    
-      <h2>1 dia{TempForecast}°C</h2>
-      <h2>2 dia{TempForecast2}°C</h2>
-      <h2>3 dia{TempForecast3}°C</h2>
-      <h2>4 dia{TempForecast4}°C</h2>
-      <h2>5 dia{TempForecast5}°C</h2>
+    <div className="TempForecast"> 
+    <div className="container"> 
+      <div className="city-time">
       
+      <h1 className="temp">{temperature}ºC</h1>
+      <h1 className="name">{cityName}</h1>
+      
+      <div className="date">{date}</div>
+
+      <div className="weather"><img src={Icon} alt="icon"/>{Description}</div>
+      </div>
+      </div>  
+      <div className="columns">
+      <div className="col">
+      <p>1 dia{TempForecast}°C</p>
+      </div>
+      <div className="col2">
+      <p>2 dia{TempForecast2}°C</p>
+      </div>
+      <div className="col3">
+      <p>3 dia{TempForecast3}°C</p>
+      </div>
+      <div className="col4">
+      <p>4 dia{TempForecast4}°C</p>
+      </div>
+      <div className="col5">
+      <p>5 dia{TempForecast5}°C</p>
+      </div>
+    </div>
     </div>
   );
 }

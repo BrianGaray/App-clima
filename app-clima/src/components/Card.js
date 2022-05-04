@@ -10,7 +10,8 @@ const Card = ({loadingData, showData, weather, forecast}) => {
     }
 
  return (
-        <div>
+    <div className='panel'> 
+       
 
             {
                 showData === true ? (
@@ -28,8 +29,8 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                 )
             }
 
-
-        </div>
+    </div>
+        
  )
 
 }

@@ -4,12 +4,121 @@
   padding: 0;
 }
 body{
-  background-color: #777;
+  
+  margin: 0;
+  background: rgba(0, 0, 0, 0.3);
+ font-family: "Rubik", sans-serif;
+min-height: 100vh;
+background-image: url(https://p0.piqsels.com/preview/34/941/144/4k-wallpaper-atmosphere-cloudiness-clouds.jpg);
+
+background-repeat: no-repeat;
+background-size: cover;
 }
+
 
 
 .App {
   text-align: center;
 }
 
+.container{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-direction: column;
+padding: 3em 3em 4em 1em;
+}
 
+.container > div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.city-time,
+.temp,
+.weather {
+  margin: 0.3em 3em;
+}
+
+.city-time h1 {
+margin: 0;
+margin-bottom: 0.2em;
+font-size: 3em;
+margin-left: 0.4em;
+}
+
+h1.temp{
+  font-size: 7em;
+  margin: 0;
+ 
+}
+
+.weather img {
+display: block;
+margin: -0.5em 2em;
+margin-top: 2em;
+}
+
+div.date{
+  padding: 0.5em;
+  display: block;
+  margin-bottom: -5em;
+  margin-left: -8em;
+
+}
+
+
+.columns{
+ margin-top: 15rem;
+  justify-content: center;
+  padding: 2rem;
+ 
+}
+
+/*.col {
+  
+   background-color: rgba(240, 248, 255, 0.199);
+}
+
+
+.col2{
+  
+  background-color: rgba(240, 248, 255, 0.199);
+}
+
+.col3{
+ 
+  background-color: rgba(240, 248, 255, 0.199);
+}
+.col4{
+ 
+  background-color: rgba(240, 248, 255, 0.199);
+}
+.col5{
+  
+  background-color: rgba(240, 248, 255, 0.199);
+}*/
+
+.panel{
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  right: 0;
+background: rgba(110, 110, 110, 0.25);
+}
+
+
+
+select {
+  word-wrap: normal;
+  z-index: 1;
+  position: relative;
+  margin-left: 58em;
+}
