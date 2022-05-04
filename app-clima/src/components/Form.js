@@ -1,5 +1,7 @@
 import react, {useState} from 'react';
 
+
+
 const Form = ({newLocation}) => {
     const [city, setcity] = useState(""); 
      const onSubmit = (e) =>{
@@ -12,11 +14,11 @@ const Form = ({newLocation}) => {
 
     return(
     
-     <div Form-container>
-    <div className='Selects'>
+     <div className='select-container'>
+    <div className='Select'>
         <select onClick={onSubmit} value = {city} onChange={(e) =>setcity(e.target.value)}>
             
-            <option></option>
+            <option>seleccionar ciudad</option>
             <option>madrid</option>
             <option>buenos aires</option>
             <option>paris</option>
@@ -26,7 +28,8 @@ const Form = ({newLocation}) => {
         </select>
        
         </div>
-        </div>  
+        </div>   
+    
     );
 }
 

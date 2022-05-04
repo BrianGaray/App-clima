@@ -4,15 +4,13 @@
   padding: 0;
 }
 body{
-  
-  margin: 0;
-  background: rgba(0, 0, 0, 0.3);
- font-family: "Rubik", sans-serif;
-min-height: 100vh;
+margin: 0;
+background: rgba(0, 0, 0, 0.3);
+font-family: "Rubik", sans-serif;
 background-image: url(https://p0.piqsels.com/preview/34/941/144/4k-wallpaper-atmosphere-cloudiness-clouds.jpg);
-
 background-repeat: no-repeat;
 background-size: cover;
+
 }
 
 
@@ -111,14 +109,43 @@ div.date{
   height: 100%;
   top: 0;
   right: 0;
-background: rgba(110, 110, 110, 0.25);
+ background: rgba(110, 110, 110, 0.25);
 }
 
+.container-weather{
+  
+  margin-top: 14em;
 
+}
+
+.select-container{
+  font-family: "Rubik", sans-serif;
+ 
+}
 
 select {
-  word-wrap: normal;
+  background: none;
+  border: none;
+  border-bottom: 1px #ccc solid;
+  padding: 0 1em 0.5em 0;
+  width: 26%;
   z-index: 1;
-  position: relative;
-  margin-left: 58em;
+  position: absolute;
+  margin-right: 1em;
+  margin-top: -14em;
+  letter-spacing: 0.5px;
+  right: 0;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+select:focus{ outline: none;}
+
+select option{
+background-color: whitesmoke;
+
+  border: none;
+  font-weight: bold;
+  padding: 0 1em 0.5em 0;
 }

@@ -1,36 +1,48 @@
 import react from 'react';
-import Spinner from './Spinner';
+/*import Spinner from './Spinner';*/
+
+
 
 const Card = ({loadingData, showData, weather, forecast}) => {
-
-    if(loadingData){
-       
-        return <Spinner />
-        
+    
+   
+    let today = new Date();
+    let day = today.getDate();
+    let month = today.getMonth() + 1;
+    let year = today.getFullYear();
+    let date = day + '/' + month + '/' + year;
+    
+    let url = "";
+    let iconUrl = "";
+ 
+    if(showData){
+        url = "http://openweathermap.org/img/w/";
+        iconUrl = url + weather.weather[0].icon + ".png";
     }
 
- return (
+
+return (
     <div className='panel'> 
        
-
+       <div className="container-weather"> 
+      
             {
                 showData === true ? (
+                    
                     <div className='TempWeather'>
                         <h1>{weather.name}</h1>
                         <h2>{weather.main.temp}°C</h2>
-                        <h2>1 dia{forecast.list[7].main.temp}°C</h2>
-                        <h2>2 dia{forecast.list[15].main.temp}°C</h2>
-                        <h2>3 dia{forecast.list[23].main.temp}°C</h2>
-                        <h2>4 dia{forecast.list[31].main.temp}°C</h2>
-                        <h2>5 dia{forecast.list[39].main.temp}°C</h2>
+                        <div className="weather-date">{date}</div>
+                        <p className="weather-icon"><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
                     </div>
+               
                 ):(
-                    <h2 className = "text-light">Sin datos</h2>
+                    <h2 className = "text-light"></h2>
                 )
             }
 
     </div>
-        
+</div>  
  )
 
 }
