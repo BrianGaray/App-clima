@@ -4,7 +4,6 @@ const Form = ({ newLocation }) => {
   const [city, setcity] = useState("");
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log({ city });
     if (city === "" || !city) return;
 
     newLocation(city);

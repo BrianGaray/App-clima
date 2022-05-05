@@ -205,7 +205,7 @@ select option {
 
 /*Responsive design */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .panel,
   .container {
     position: relative;
@@ -222,12 +222,31 @@ select option {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   h1.temp,
   h1.city-time {
-    font-size: 3em;
+    font-size: 5em;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  h1.temp,
+  h1.city-time {
+    font-size: 2em;
+  }
+
+  @media screen and (max-width: 900px) {
+    h1.name {
+      font-size: 2em;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  h1.city-time {
+    font-size: 0.5em;
+  }
+}
+
 @media screen and (max-width: 500px) {
   h1.temp,
   h1.city-time {
@@ -235,7 +254,7 @@ select option {
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   body {
     background-size: 120rem;
     background-color: #777;
