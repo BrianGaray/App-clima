@@ -219,5 +219,68 @@ color: rgba(0, 0, 0, 0.808);
   transition: all 1s;
 }
 
+/*Responsive design */
 
+@media screen and (max-width:1080px) {
+   .panel, .container {
+   position: relative;
+   width: 100%;
+   top:initial
+   
+  }
+}
+@media screen and (max-width:700px) {
+  .panel, .container {
+  position: relative;
+  width: 100%;
+  top:initial
+  
+ }
+}
 
+@media screen and (max-width:700px) {
+  h1.temp, h1.city-time {
+    font-size: 3em;
+ }
+}
+@media screen and (max-width:500px) {
+  h1.temp, h1.city-time {
+    font-size: 1.5em;
+   
+  }
+}
+
+@media screen and (max-width:1080px) {
+  body {
+    background-size: 120rem;
+    background-color: #777
+  }
+}
+
+@media screen and (max-width:1080px) {
+  body {
+    background-size: 130rem;
+    background-color: #777
+  }
+}
+
+@media screen and (max-width:800px) {
+  body {
+    background-size: 170rem;
+    background-color: #777;
+  }
+}
+
+@media screen and (max-width:700px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  select {
+    left: 0;
+    width: 36%;
+    margin-left: 5%;  
+  }
+}
