@@ -78,6 +78,9 @@ div.date{
 
 }
 
+.Forecast-icon{
+  padding: .3em;
+}
 
 .panel{
   position: absolute;
@@ -132,13 +135,6 @@ background-color: whitesmoke;
   padding: 0 1em 0.5em 0;
 }
  
-
-
-.col_1{
-  background-color: rgba(204, 204, 204, 0.342);
-  border-radius: 20%;
-  
-}
 
 .columns{
   margin-left: 4%;
