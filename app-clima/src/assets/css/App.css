@@ -7,10 +7,10 @@ body{
 margin: 0;
 background: rgba(0, 0, 0, 0.3);
 font-family: "Rubik", sans-serif;
-background-image: url(https://p0.piqsels.com/preview/34/941/144/4k-wallpaper-atmosphere-cloudiness-clouds.jpg);
+background-image: url(../css/img/HDRshooter-4K-wallpaper-053-3840x2160.jpg);
 background-repeat: no-repeat;
-background-size: cover;
-
+background-size: 100rem;
+color: rgba(255, 255, 255, 0.678);
 }
 
 
@@ -67,7 +67,7 @@ div.date{
   padding: 0.5em;
   display: block;
   margin-bottom: -5em;
-  margin-left: -8em;
+  margin-left: -9em;
 
 }
 
@@ -88,14 +88,22 @@ div.date{
   height: 100%;
   top: 0;
   right: 0;
- background: rgba(110, 110, 110, 0.25);
+  background: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(12, 12, 12, 0.836);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(167, 157, 157, 0.281);
 }
 
 .col{
 margin: auto;
-border: 1px solid rgba(167, 157, 157, 0.281);
-border-radius: 2%;
+border-top: 1.5px solid rgba(167, 157, 157, 0.281);
+border-radius: 1%;
+
 }
+
+
+
 .container-weather{
   
   margin-top: 14em;
@@ -122,14 +130,14 @@ select {
   right: 0;
   font-weight: bold;
   cursor: pointer;
-
+  color: rgba(255, 255, 255, 0.623);
 }
 
 select:focus{ outline: none;}
 
 select option{
 background-color: whitesmoke;
-
+color: rgba(0, 0, 0, 0.808);
   border: none;
   font-weight: bold;
   padding: 0 1em 0.5em 0;
@@ -140,35 +148,76 @@ background-color: whitesmoke;
   margin-left: 4%;
   margin-bottom: 1.5%;
   flex-wrap:wrap;
-  gap: .5em;
+  gap: .9em;
 }
 
 .col_1{
-  background-color: rgba(204, 204, 204, 0.342);
+  background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
-  
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
+}
+
+.col_1:hover{
+  background-color: rgba(204, 204, 204, 0.199);
+  transition: all 1s;
 }
 
 .col_2{
-  background-color: rgba(204, 204, 204, 0.342);
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 20%;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
   
 }
 
 .col_3{
-  background-color: rgba(204, 204, 204, 0.342);
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 20%;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
   
 }
 
 .col_4{
-  background-color: rgba(204, 204, 204, 0.342);
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 20%;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
   
 }
 
 .col_5{
-  background-color: rgba(204, 204, 204, 0.342);
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 20%;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
   
 }
+
+.col_1:hover{
+  background-color: rgba(204, 204, 204, 0.199);
+  transition: all 1s;
+}
+
+.col_2:hover{
+  background-color: rgba(204, 204, 204, 0.199);
+  transition: all 1s;
+}
+
+.col_3:hover{
+  background-color: rgba(204, 204, 204, 0.199);
+  transition: all 1s;
+}
+
+.col_4:hover{
+  background-color: rgba(204, 204, 204, 0.199);
+  transition: all 1s;
+}
+
+.col_5:hover{
+  background-color: rgba(204, 204, 204, 0.199);
+  transition: all 1s;
+}
+
+
+
