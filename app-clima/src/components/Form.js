@@ -24,11 +24,11 @@ const Form = ({newLocation}) => {
             <option>paris</option>
             <option>tokio</option>
             <option>londres</option>
-
+       
         </select>
        
         </div>
-        </div>   
+    </div>   
     
     );
 }
