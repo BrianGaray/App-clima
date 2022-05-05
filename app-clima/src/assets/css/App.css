@@ -3,39 +3,37 @@
   margin: 0;
   padding: 0;
 }
-body{
-margin: 0;
-background: rgba(0, 0, 0, 0.3);
-font-family: "Rubik", sans-serif;
-background-image: url(../css/img/HDRshooter-4K-wallpaper-053-3840x2160.jpg);
-background-repeat: no-repeat;
-background-size: 100rem;
-color: rgba(255, 255, 255, 0.678);
+body {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: "Rubik", sans-serif;
+  background-image: url(../css/img/HDRshooter-4K-wallpaper-053-3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  color: rgba(255, 255, 255, 0.678);
 }
-
-
 
 .App {
   text-align: center;
 }
 
-.container{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-flex-direction: column;
-padding: 3em 3em 3em 1em;
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3em 3em 3em 1em;
 }
 
-.container > div{
-display: flex;
-justify-content: center;
-align-items: center;
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .city-time,
@@ -45,44 +43,40 @@ align-items: center;
 }
 
 .city-time h1 {
-margin: 0;
-margin-bottom: 0.2em;
-font-size: 3em;
-margin-left: 0.4em;
+  margin: 0;
+  margin-bottom: 0.2em;
+  font-size: 3em;
+  margin-left: 0.4em;
 }
 
-h1.temp{
+h1.temp {
   font-size: 7em;
   margin: 0;
- 
 }
 
 .weather img {
-display: block;
-margin: -0.5em 2em;
-margin-top: 2em;
+  display: block;
+  margin: -0.5em 2em;
+  margin-top: 2em;
 }
 
-div.date{
+div.date {
   padding: 0.5em;
   display: block;
   margin-bottom: -5em;
   margin-left: -9em;
-
 }
 
-
-.row{
+.row {
   margin-top: 15em;
   margin-right: 10em;
-
 }
 
-.Forecast-icon{
-  padding: .3em;
+.Forecast-icon {
+  padding: 0.3em;
 }
 
-.panel{
+.panel {
   position: absolute;
   width: 32%;
   height: 100%;
@@ -95,25 +89,18 @@ div.date{
   border: 1px solid rgba(167, 157, 157, 0.281);
 }
 
-.col{
-margin: auto;
-border-top: 1.5px solid rgba(167, 157, 157, 0.281);
-border-radius: 1%;
-
+.col {
+  margin: auto;
+  border-top: 1.5px solid rgba(167, 157, 157, 0.281);
+  border-radius: 1%;
 }
 
-
-
-.container-weather{
-  
+.container-weather {
   margin-top: 14em;
-  
-
 }
 
-.select-container{
+.select-container {
   font-family: "Rubik", sans-serif;
- 
 }
 
 select {
@@ -133,154 +120,152 @@ select {
   color: rgba(255, 255, 255, 0.623);
 }
 
-select:focus{ outline: none;}
+select:focus {
+  outline: none;
+}
 
-select option{
-background-color: whitesmoke;
-color: rgba(0, 0, 0, 0.808);
+select option {
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.808);
   border: none;
   font-weight: bold;
   padding: 0 1em 0.5em 0;
 }
- 
 
-.columns{
+.columns {
   margin-left: 4%;
   margin-bottom: 1.5%;
-  flex-wrap:wrap;
-  gap: .9em;
+  flex-wrap: wrap;
+  gap: 0.9em;
 }
 
-.col_1{
+.col_1 {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
 }
 
-.col_1:hover{
+.col_1:hover {
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
-.col_2{
+.col_2 {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
-  
 }
 
-.col_3{
+.col_3 {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
-  
 }
 
-.col_4{
+.col_4 {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
-  
 }
 
-.col_5{
+.col_5 {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
   border-radius: 20%;
-  
 }
 
-.col_1:hover{
+.col_1:hover {
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
-.col_2:hover{
+.col_2:hover {
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
-.col_3:hover{
+.col_3:hover {
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
-.col_4:hover{
+.col_4:hover {
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
-.col_5:hover{
+.col_5:hover {
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 /*Responsive design */
 
-@media screen and (max-width:1080px) {
-   .panel, .container {
-   position: relative;
-   width: 100%;
-   top:initial
-   
+@media screen and (max-width: 1080px) {
+  .panel,
+  .container {
+    position: relative;
+    width: 100%;
+    top: initial;
   }
 }
-@media screen and (max-width:700px) {
-  .panel, .container {
-  position: relative;
-  width: 100%;
-  top:initial
-  
- }
+@media screen and (max-width: 700px) {
+  .panel,
+  .container {
+    position: relative;
+    width: 100%;
+    top: initial;
+  }
 }
 
-@media screen and (max-width:700px) {
-  h1.temp, h1.city-time {
+@media screen and (max-width: 700px) {
+  h1.temp,
+  h1.city-time {
     font-size: 3em;
- }
+  }
 }
-@media screen and (max-width:500px) {
-  h1.temp, h1.city-time {
+@media screen and (max-width: 500px) {
+  h1.temp,
+  h1.city-time {
     font-size: 1.5em;
-   
   }
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 1080px) {
   body {
     background-size: 120rem;
-    background-color: #777
+    background-color: #777;
   }
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 1080px) {
   body {
     background-size: 130rem;
-    background-color: #777
+    background-color: #777;
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   body {
     background-size: 170rem;
     background-color: #777;
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   html {
     font-size: 12px;
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   select {
     left: 0;
     width: 36%;
-    margin-left: 5%;  
+    margin-left: 5%;
   }
 }

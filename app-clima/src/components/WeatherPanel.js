@@ -1,87 +1,80 @@
-import React, {useState} from 'react';
-import Form from './Form';
-import Card from './Card';
-import Geolocation from './Geolocation';
-
-
+import React, { useState } from "react";
+import Form from "./Form";
+import Card from "./Card";
+import Geolocation from "./Geolocation";
+//Panel del tiempo
 const WeatherPanel = () => {
+  let urlWeather =
+    "https://api.openweathermap.org/data/2.5/weather?appid=290a028087077883f8fb093dc10e89f5&&lang=es&units=metric";
+  let cityUrl = "&q=";
 
-    let urlWeather = "https://api.openweathermap.org/data/2.5/weather?appid=290a028087077883f8fb093dc10e89f5&&lang=es&units=metric";
-    let cityUrl = "&q=";
+  let urlForecast =
+    "https://api.openweathermap.org/data/2.5/forecast?appid=290a028087077883f8fb093dc10e89f5&lang=es&units=metric";
 
-    let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?appid=290a028087077883f8fb093dc10e89f5&lang=es&units=metric"
+  const [weather, setWeather] = useState([]);
+  const [forecast, setForecast] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [show, setShow] = useState(false);
+  const [location, setLocation] = useState("");
 
-    const [weather, setWeather] = useState([]);
-    const [forecast, setForecast] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [show, setShow] = useState(false);
-    const [location, setLocation] = useState("");
+  const getLocation = async (loc) => {
+    setLoading(true);
+    setLocation(loc);
 
-    const getLocation = async(loc) => {
-        setLoading(true);
-        setLocation(loc);
+    //weather
 
-        //weather
+    urlWeather = urlWeather + cityUrl + loc;
 
-        urlWeather = urlWeather + cityUrl + loc;
+    await fetch(urlWeather)
+      .then((response) => {
+        if (!response.ok) throw { response };
+        return response.json();
+      })
+      .then((weatherData) => {
+        setWeather(weatherData);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+        setShow(false);
+      });
 
-        await fetch(urlWeather).then((response) =>{
-            if(!response.ok) throw {response}
-            return response.json();
-        }).then((weatherData) =>{
-            console.log(weatherData);
-            setWeather(weatherData);
-        }).catch(error =>{
-            console.log(error);
-            setLoading(false);
-            setShow(false);
-        });
+    //Forecast
 
-        //Forecast
+    urlForecast = urlForecast + cityUrl + loc;
 
-        urlForecast = urlForecast + cityUrl + loc;
+    await fetch(urlForecast)
+      .then((response) => {
+        if (!response.ok) throw { response };
+        return response.json();
+      })
+      .then((forecastData) => {
+        setForecast(forecastData);
 
-        await fetch(urlForecast).then((response) =>{
-            if(!response.ok) throw {response}
-            return response.json();
-        }).then((forecastData) =>{
-            console.log(forecastData);
-            setForecast(forecastData);
+        setLoading(false);
+        setShow(true);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+        setShow(false);
+      });
+  };
 
-            setLoading(false);
-            setShow(true);
+  return (
+    <React.Fragment>
+      <Form newLocation={getLocation} />
 
-        }).catch(error =>{
-            console.log(error);
-            setLoading(false);
-            setShow(false);
-        });
+      <Card
+        showData={show}
+        loadingData={loading}
+        weather={weather}
+        forecast={forecast}
+      />
 
-        
-    }
-
-
-    return(
-        <React.Fragment>
-    
-        <Form
-            newLocation = {getLocation}
-        />
-        
-        <Card
-                showData = {show}
-                loadingData = {loading}
-                weather = {weather}
-                forecast = {forecast}
-            />
-
-        <Geolocation />
-       
-
+      <Geolocation />
     </React.Fragment>
-    );
-    
-}
-
+  );
+};
 
 export default WeatherPanel;
