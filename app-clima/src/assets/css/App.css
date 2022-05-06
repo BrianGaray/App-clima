@@ -265,7 +265,7 @@ select option {
 
 @media screen and (max-width: 1080px) {
   body {
-    background-size: cover;
+    background-size: 100em;
     height: 100vh;
     width: 100vw;
   }
@@ -273,7 +273,7 @@ select option {
 
 @media screen and (max-width: 800px) {
   body {
-    background-size: cover;
+    background-size: 150em;
     height: 100vh;
     width: 100vw;
   }
