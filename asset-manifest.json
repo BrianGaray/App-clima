@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/App-clima/static/css/main.612698d2.css",
+    "main.css": "/App-clima/static/css/main.cfeac0b9.css",
     "main.js": "/App-clima/static/js/main.abb6e262.js",
     "static/js/787.9d671024.chunk.js": "/App-clima/static/js/787.9d671024.chunk.js",
     "static/media/HDRshooter-4K-wallpaper-053-3840x2160.jpg": "/App-clima/static/media/HDRshooter-4K-wallpaper-053-3840x2160.214aaf57e739faa93706.jpg",
     "index.html": "/App-clima/index.html",
-    "main.612698d2.css.map": "/App-clima/static/css/main.612698d2.css.map",
+    "main.cfeac0b9.css.map": "/App-clima/static/css/main.cfeac0b9.css.map",
     "main.abb6e262.js.map": "/App-clima/static/js/main.abb6e262.js.map",
     "787.9d671024.chunk.js.map": "/App-clima/static/js/787.9d671024.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.612698d2.css",
+    "static/css/main.cfeac0b9.css",
     "static/js/main.abb6e262.js"
   ]
 }
