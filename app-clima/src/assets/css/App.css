@@ -154,6 +154,7 @@ select option {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
+
 }
 
 .col_3 {
@@ -161,6 +162,7 @@ select option {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
+  
 }
 
 .col_4 {
@@ -180,26 +182,31 @@ select option {
 }
 
 .col_1:hover {
+
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_2:hover {
+ 
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_3:hover {
+ 
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_4:hover {
+  
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_5:hover {
+
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
