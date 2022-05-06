@@ -5,7 +5,7 @@
 }
 body {
   margin: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: #221433;
   font-family: "Rubik", sans-serif;
   background-image: url(../css/img/HDRshooter-4K-wallpaper-053-3840x2160.jpg);
   background-repeat: no-repeat;
@@ -92,14 +92,14 @@ div.date {
 }
 
 .col {
-  padding: 1rem;
+  padding: 0.5rem;
   margin: auto;
   border-top: 1.5px solid rgba(167, 157, 157, 0.281);
   border-radius: 1%;
 }
 
 .container-weather {
-  margin-top: 14em;
+  margin-top: 12em;
 }
 
 .select-container {
@@ -143,30 +143,28 @@ select option {
 }
 
 .col_1 {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
 }
 
 .col_2 {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
-
 }
 
 .col_3 {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
-  
 }
 
 .col_4 {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
@@ -174,7 +172,7 @@ select option {
 }
 
 .col_5 {
-  padding: 1rem;
+  padding: 0.5em;
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 20%;
   box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
@@ -182,31 +180,26 @@ select option {
 }
 
 .col_1:hover {
-
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_2:hover {
- 
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_3:hover {
- 
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_4:hover {
-  
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
 
 .col_5:hover {
-
   background-color: rgba(204, 204, 204, 0.199);
   transition: all 1s;
 }
@@ -267,7 +260,6 @@ select option {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    background-color: #777;
   }
 }
 
@@ -276,7 +268,6 @@ select option {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    background-color: #777;
   }
 }
 
@@ -285,7 +276,6 @@ select option {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    background-color: #777;
   }
 }
 
