@@ -257,7 +257,7 @@ select option {
 
 @media screen and (max-width: 1200px) {
   body {
-    background-size: cover;
+    background-size: 130rem;
     height: 100vh;
     width: 100vw;
   }
@@ -265,7 +265,7 @@ select option {
 
 @media screen and (max-width: 1080px) {
   body {
-    background-size: 100em;
+    background-size: 140rem;
     height: 100vh;
     width: 100vw;
   }
@@ -273,11 +273,21 @@ select option {
 
 @media screen and (max-width: 800px) {
   body {
-    background-size: 150em;
+    background-size: 150rem;
+    height:100vh;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-size: 180rem;
     height: 100vh;
     width: 100vw;
   }
 }
+
+
 
 @media screen and (max-width: 700px) {
   html {
