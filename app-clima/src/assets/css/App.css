@@ -136,10 +136,10 @@ select option {
 }
 
 .columns {
-  margin-left: 4%;
-  margin-bottom: 1.5%;
+  margin: 2em;
   flex-wrap: wrap;
-  gap: 0.9em;
+  gap: 1em;
+ font-size: 14px;
 }
 
 .col_1 {
